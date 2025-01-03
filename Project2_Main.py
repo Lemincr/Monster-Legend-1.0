@@ -135,13 +135,13 @@ class Player:
             random_index = random.randint(0, len(MonsterList)-1)
             selected_monsters.append(MonsterList[random_index])
         
-        self.Monster1 = MonsterList[-1]
+        self.Monster1 = selected_monsters[1]
         self.Monster2 = selected_monsters[1]
         self.Monster3 = selected_monsters[2]
         self.Monster4 = selected_monsters[3]
         self.Monster5 = selected_monsters[4]
         self.Monster6 = selected_monsters[5]
-        self.CurrentMonster = MonsterList[-1]
+        self.CurrentMonster = selected_monsters[1]
 
 class Enemy:
     def __init__(self, MonsterList, NameList):
