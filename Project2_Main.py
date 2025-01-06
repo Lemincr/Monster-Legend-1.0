@@ -215,6 +215,7 @@ class Duel:
 
             print(f"ENNEMY {defender.Name}, {self.types[defender.Type1]}, Hp: {defender.Hp}")
             print(f"{attacker.Name}, remaining MP: {attacker.Mp} \n")
+            #tout les if servent juste à faire un beau print
             attack_str = f"{attacker.Attack1.Name}"
             if attacker.Attack1.dmg != 0:
                 attack_str += f", dmg: {attacker.Attack1.dmg}"
