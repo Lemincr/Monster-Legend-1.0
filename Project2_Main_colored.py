@@ -100,7 +100,6 @@ class Monster:
                 self.attacking = True
             else:
                 print(f"{self.Name} don't have enough Mp")
-                self.MP == 0
                 self.attacking = False
         else:
             print(f"{self.Name} is currently dead")
