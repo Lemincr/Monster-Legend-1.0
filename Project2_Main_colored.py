@@ -100,6 +100,7 @@ class Monster:
                 self.attacking = True
             else:
                 print(f"{self.Name} don't have enough Mp")
+                self.MP == 0
                 self.attacking = False
         else:
             print(f"{self.Name} is currently dead")
@@ -300,7 +301,7 @@ class Duel:
 
         # Attaque
         if selected_attack:
-            if attacker.attacking == True:
+            if attacker.attacking == True and attacker.Mp - selected_attack.Mpcost >= 0:
                 print(f"{attacker.Name} is attacking {defender.Name} with {selected_attack.Name}!")
                 attacker.attack(defender, selected_attack)
             else:
