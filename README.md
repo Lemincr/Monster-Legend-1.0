@@ -73,15 +73,16 @@ Project2_Main.exe
   - `Nom` : Nom de l'attaque
   - `dmg` : Dégats
   - `Mpcost` : Coût en Mana
-  - `Element` : Type élémentaire principal
-  - `Type2` : Type élémentaire secondaire
-  - `Pm` : Points de Magie
+  - `Element` : Element 1 et 2
+  - `self heal` : soin appliqué à notre monstre
+  - `autres` : autre paramêtres non utilisés dans le reste du code
 
 ### 3. **Sortie du Programme :**
 - Le jeu s'affiche dans la console avec :
   - Les statistiques des monstres
   - Les séquences d'attaque au tour par tour
   - Les PV et PM restants
+  - Les 3 attaques disponibles
   - Des notifications lorsque les monstres tombent K.O. ou changent
   - L'annonce du gagnant à la fin du combat
 
@@ -91,8 +92,8 @@ Project2_Main.exe
 RPG-Combat-Monstres/
 ├── main.py             # Script principal pour lancer le jeu
 ├── Monster.py          # Classe Monster et son comportement
-├── Player.py           # Classe Player pour la gestion des monstres
-├── Duel.py             # Mécanique de duel et déroulement des combats
+├── List_Nom.json  # Données JSON pour tous les Noms
+├── Attaque_Liste.json  # Données JSON pour toute les attaques
 ├── Monster_Liste.json  # Données JSON pour tous les monstres
 └── README.md           # Documentation du projet
 ```
@@ -108,9 +109,9 @@ RPG-Combat-Monstres/
 
 ## Licence
 
-Ce projet est développé à des fins éducatives.
+Fait par Hindi, lenny et Maxime.
 
 ---
-Profitez du combat avec vos monstres !
+
 
 
