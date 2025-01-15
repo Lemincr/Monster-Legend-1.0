@@ -18,7 +18,7 @@ class Monster:
         self.Effect: int|None = None
         self.Atk: int = 1
         self.select_random_attacks(attacklist)
-        self.attacking: bool = True
+        self.attacking: bool = False
         self.multiplier = 1
     def select_random_attacks(self, attacklist):
         selected_attacks = []
@@ -135,13 +135,13 @@ class Player:
             random_index = random.randint(0, len(MonsterList)-1)
             selected_monsters.append(MonsterList[random_index])
         
-        self.Monster1 = selected_monsters[1]
+        self.Monster1 = selected_monsters[0]
         self.Monster2 = selected_monsters[1]
         self.Monster3 = selected_monsters[2]
         self.Monster4 = selected_monsters[3]
         self.Monster5 = selected_monsters[4]
         self.Monster6 = selected_monsters[5]
-        self.CurrentMonster = selected_monsters[1]
+        self.CurrentMonster = selected_monsters[0]
 
 class Enemy:
     def __init__(self, MonsterList, NameList):
