@@ -115,6 +115,11 @@ Gère le combat.
 
 ---
 
+## Roles:
+maxime: Json des monstre, coordination d'équipe par discord, managing des call discord
+lenny: Diapo, class monster & attaque + Json des attaques et monstres
+hindi: class duel, fonction pour extraire les Json, class player, ennemy, refonte du code pour que les class intéragissent entre elles
+
 ## Conclusion
 Ce document décrit en détail les composantes du jeu de combat de monstres, incluant la structure des classes, leurs attributs et leurs méthodes.
 
